@@ -7,13 +7,14 @@
 //
 
 #import "ForecastAPIClient.h"
+#import "Secrets.h"
 
 @implementation ForecastAPIClient
 
 + (void)getWeatherConditionsForLocation:(CLLocation *)location
                          WithCompletion:(void (^)(NSDictionary *weatherData))completionBlock {
     
-    NSString *forecastURLString = [NSString stringWithFormat:@"https://api.forecast.io/forecast/8922651c3e1630210a8f267834349324/%f,%f", location.coordinate.latitude, location.coordinate.longitude];
+    NSString *forecastURLString = [NSString stringWithFormat:@"https://api.forecast.io/forecast/%@/%f,%f", ForecastAPIKey,location.coordinate.latitude, location.coordinate.longitude];
     NSURL *url = [NSURL URLWithString:forecastURLString];
     NSURLSession *urlSession = [NSURLSession sharedSession];
     NSURLSessionDataTask *urlSessionDataTask = [urlSession dataTaskWithURL:url

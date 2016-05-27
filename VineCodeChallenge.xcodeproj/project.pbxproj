@@ -18,6 +18,7 @@
 		B049406B1CF7CCA000201C29 /* ForecastAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B049406A1CF7CCA000201C29 /* ForecastAPIClient.m */; };
 		B04940741CF896E600201C29 /* DailyConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940731CF896E600201C29 /* DailyConditionsViewController.m */; };
 		B04940771CF8ABF100201C29 /* WeatherReport.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940761CF8ABF100201C29 /* WeatherReport.m */; };
+		B049407A1CF8E12100201C29 /* Secrets.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940791CF8E12100201C29 /* Secrets.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B04940731CF896E600201C29 /* DailyConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyConditionsViewController.m; sourceTree = "<group>"; };
 		B04940751CF8ABF100201C29 /* WeatherReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherReport.h; sourceTree = "<group>"; };
 		B04940761CF8ABF100201C29 /* WeatherReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherReport.m; sourceTree = "<group>"; };
+		B04940781CF8E12100201C29 /* Secrets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secrets.h; sourceTree = "<group>"; };
+		B04940791CF8E12100201C29 /* Secrets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secrets.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				B04940761CF8ABF100201C29 /* WeatherReport.m */,
 				B04940691CF7CCA000201C29 /* ForecastAPIClient.h */,
 				B049406A1CF7CCA000201C29 /* ForecastAPIClient.m */,
+				B04940781CF8E12100201C29 /* Secrets.h */,
+				B04940791CF8E12100201C29 /* Secrets.m */,
 				B049403C1CF79BFA00201C29 /* Main.storyboard */,
 				B049403F1CF79BFA00201C29 /* Assets.xcassets */,
 				B04940411CF79BFA00201C29 /* LaunchScreen.storyboard */,
@@ -290,6 +295,7 @@
 			files = (
 				B04940381CF79BFA00201C29 /* AppDelegate.m in Sources */,
 				B04940741CF896E600201C29 /* DailyConditionsViewController.m in Sources */,
+				B049407A1CF8E12100201C29 /* Secrets.m in Sources */,
 				B04940351CF79BFA00201C29 /* main.m in Sources */,
 				B049406B1CF7CCA000201C29 /* ForecastAPIClient.m in Sources */,
 				B04940771CF8ABF100201C29 /* WeatherReport.m in Sources */,
