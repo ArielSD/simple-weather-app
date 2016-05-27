@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureConditionsLabel];
+    [self configureMaximumTemperatureLabel];
+    [self configureMinimumTemperatureLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,12 +31,40 @@
     
     self.conditionsLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.conditionsLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
-    [self.conditionsLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
+//    [self.conditionsLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
     [self.conditionsLabel.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
-    [self.conditionsLabel.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
+//    [self.conditionsLabel.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
     
     self.conditionsLabel.textAlignment = NSTextAlignmentCenter;
     self.conditionsLabel.text = @"---";
+}
+
+- (void)configureMaximumTemperatureLabel {
+    self.maximumTemperatureLabel = [UILabel new];
+    [self.view addSubview:self.maximumTemperatureLabel];
+    
+    self.maximumTemperatureLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.maximumTemperatureLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
+    [self.maximumTemperatureLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
+    [self.maximumTemperatureLabel.topAnchor constraintEqualToAnchor:self.conditionsLabel.bottomAnchor].active = YES;
+//    [self.maximumTemperatureLabel.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
+    
+    self.maximumTemperatureLabel.textAlignment = NSTextAlignmentCenter;
+    self.maximumTemperatureLabel.text = @"High: ---";
+}
+
+- (void)configureMinimumTemperatureLabel {
+    self.minimumTemperatureLabel = [UILabel new];
+    [self.view addSubview:self.minimumTemperatureLabel];
+    
+    self.minimumTemperatureLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.minimumTemperatureLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
+    [self.minimumTemperatureLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
+    [self.minimumTemperatureLabel.topAnchor constraintEqualToAnchor:self.maximumTemperatureLabel.bottomAnchor].active = YES;
+    //    [self.maximumTemperatureLabel.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
+    
+    self.minimumTemperatureLabel.textAlignment = NSTextAlignmentCenter;
+    self.minimumTemperatureLabel.text = @"Low: ---";
 }
 
 - (void)weatherDashboardViewController:(WeatherDashboardViewController *)weatherDashboardViewController
@@ -42,6 +72,8 @@
     
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         self.conditionsLabel.text = weatherReport.summary;
+        self.maximumTemperatureLabel.text = [NSString stringWithFormat:@"High: %@", weatherReport.maximumTemperature];
+        self.minimumTemperatureLabel.text = [NSString stringWithFormat:@"Low: %@", weatherReport.minimumTemperature];
     }];
 }
 

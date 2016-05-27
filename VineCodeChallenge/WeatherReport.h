@@ -11,8 +11,8 @@
 @interface WeatherReport : NSObject
 
 @property (strong, nonatomic) NSString *date;
-@property (strong, nonatomic) NSString *maximumTemperature;
-@property (strong, nonatomic) NSString *minimumTemperature;
+@property (strong, nonatomic) NSNumber *maximumTemperature;
+@property (strong, nonatomic) NSNumber *minimumTemperature;
 @property (strong, nonatomic) NSString *summary;
 
 + (instancetype)weatherReportFromDictionary:(NSDictionary *)dictionary;

@@ -12,7 +12,11 @@
 @interface DailyConditionsViewController : UIViewController
 
 @property (strong, nonatomic) UILabel *conditionsLabel;
+@property (strong, nonatomic) UILabel *maximumTemperatureLabel;
+@property (strong, nonatomic) UILabel *minimumTemperatureLabel;
 
 - (void)configureConditionsLabel;
+- (void)configureMaximumTemperatureLabel;
+- (void)configureMinimumTemperatureLabel;
 
 @end

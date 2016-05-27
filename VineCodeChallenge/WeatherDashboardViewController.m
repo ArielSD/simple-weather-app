@@ -15,9 +15,6 @@
 @implementation WeatherDashboardViewController
 
 - (void)viewDidLoad {
-    
-    NSLog(@"View Did Load");
-    
     [super viewDidLoad];
     [self configureTableView];
     [self configureCurrentWeatherLabel];
@@ -30,10 +27,8 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"View Will Appear");
     if ([CLLocationManager authorizationStatus] == 4) {
         [self.locationManager startUpdatingLocation];
-        NSLog(@"Good to go!");
     }
 }
 
@@ -41,6 +36,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UI Layout
 
 - (void)configureTableView {
     self.weatherTableView = [UITableView new];
@@ -133,9 +130,6 @@
 #pragma mark - CLLocationMangerDelegate Methods
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
-    
-    NSLog(@"Location updated");
-    
     CLLocation *mostRecentLocation = [locations lastObject];
     NSDate *locationCaptureTime = mostRecentLocation.timestamp;
     NSTimeInterval timeSinceLocationCapture = [locationCaptureTime timeIntervalSinceNow];
@@ -148,22 +142,15 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    NSLog(@"Did change authorization status: %d", [CLLocationManager authorizationStatus]);
     if ([CLLocationManager authorizationStatus] == 4) {
         [self.locationManager startUpdatingLocation];
         self.enableLocationServicesLabel.hidden = YES;
         self.refreshButton.enabled = YES;
-        NSLog(@"Good to go!");
     }
     else {
-        NSLog(@"Need location services");
         self.enableLocationServicesLabel.hidden = NO;
         self.refreshButton.enabled = NO;
     }
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    // Error handling will go here
 }
 
 #pragma mark - Network Calls
