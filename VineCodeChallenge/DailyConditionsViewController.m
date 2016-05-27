@@ -31,9 +31,7 @@
     
     self.conditionsLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.conditionsLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
-//    [self.conditionsLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
     [self.conditionsLabel.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
-//    [self.conditionsLabel.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
     
     self.conditionsLabel.textAlignment = NSTextAlignmentCenter;
     self.conditionsLabel.text = @"---";
@@ -47,7 +45,6 @@
     [self.maximumTemperatureLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
     [self.maximumTemperatureLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
     [self.maximumTemperatureLabel.topAnchor constraintEqualToAnchor:self.conditionsLabel.bottomAnchor].active = YES;
-//    [self.maximumTemperatureLabel.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
     
     self.maximumTemperatureLabel.textAlignment = NSTextAlignmentCenter;
     self.maximumTemperatureLabel.text = @"High: ---";
@@ -61,7 +58,6 @@
     [self.minimumTemperatureLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
     [self.minimumTemperatureLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
     [self.minimumTemperatureLabel.topAnchor constraintEqualToAnchor:self.maximumTemperatureLabel.bottomAnchor].active = YES;
-    //    [self.maximumTemperatureLabel.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
     
     self.minimumTemperatureLabel.textAlignment = NSTextAlignmentCenter;
     self.minimumTemperatureLabel.text = @"Low: ---";
