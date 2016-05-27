@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B04940351CF79BFA00201C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940341CF79BFA00201C29 /* main.m */; };
+		B04940381CF79BFA00201C29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940371CF79BFA00201C29 /* AppDelegate.m */; };
+		B049403E1CF79BFA00201C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B049403C1CF79BFA00201C29 /* Main.storyboard */; };
+		B04940401CF79BFA00201C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B049403F1CF79BFA00201C29 /* Assets.xcassets */; };
+		B04940431CF79BFA00201C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04940411CF79BFA00201C29 /* LaunchScreen.storyboard */; };
+		B049404E1CF79BFA00201C29 /* VineCodeChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B049404D1CF79BFA00201C29 /* VineCodeChallengeTests.m */; };
+		B04940591CF79BFA00201C29 /* VineCodeChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940581CF79BFA00201C29 /* VineCodeChallengeUITests.m */; };
+		B04940681CF79DD500201C29 /* WeatherDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940671CF79DD500201C29 /* WeatherDashboardViewController.m */; };
+		B049406B1CF7CCA000201C29 /* ForecastAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B049406A1CF7CCA000201C29 /* ForecastAPIClient.m */; };
+		B04940741CF896E600201C29 /* DailyConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940731CF896E600201C29 /* DailyConditionsViewController.m */; };
+		B04940771CF8ABF100201C29 /* WeatherReport.m in Sources */ = {isa = PBXBuildFile; fileRef = B04940761CF8ABF100201C29 /* WeatherReport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B049404A1CF79BFA00201C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B04940281CF79BF900201C29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B049402F1CF79BFA00201C29;
+			remoteInfo = VineCodeChallenge;
+		};
+		B04940551CF79BFA00201C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B04940281CF79BF900201C29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B049402F1CF79BFA00201C29;
+			remoteInfo = VineCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B04940301CF79BFA00201C29 /* VineCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VineCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04940341CF79BFA00201C29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B04940361CF79BFA00201C29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B04940371CF79BFA00201C29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B049403D1CF79BFA00201C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B049403F1CF79BFA00201C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B04940421CF79BFA00201C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B04940441CF79BFA00201C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04940491CF79BFA00201C29 /* VineCodeChallenge.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VineCodeChallenge.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B049404D1CF79BFA00201C29 /* VineCodeChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VineCodeChallengeTests.m; sourceTree = "<group>"; };
+		B049404F1CF79BFA00201C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04940541CF79BFA00201C29 /* VineCodeChallenge.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VineCodeChallenge.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04940581CF79BFA00201C29 /* VineCodeChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VineCodeChallengeUITests.m; sourceTree = "<group>"; };
+		B049405A1CF79BFA00201C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04940661CF79DD500201C29 /* WeatherDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDashboardViewController.h; sourceTree = "<group>"; };
+		B04940671CF79DD500201C29 /* WeatherDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDashboardViewController.m; sourceTree = "<group>"; };
+		B04940691CF7CCA000201C29 /* ForecastAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastAPIClient.h; sourceTree = "<group>"; };
+		B049406A1CF7CCA000201C29 /* ForecastAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastAPIClient.m; sourceTree = "<group>"; };
+		B04940721CF896E600201C29 /* DailyConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyConditionsViewController.h; sourceTree = "<group>"; };
+		B04940731CF896E600201C29 /* DailyConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyConditionsViewController.m; sourceTree = "<group>"; };
+		B04940751CF8ABF100201C29 /* WeatherReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherReport.h; sourceTree = "<group>"; };
+		B04940761CF8ABF100201C29 /* WeatherReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherReport.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B049402D1CF79BFA00201C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04940461CF79BFA00201C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04940511CF79BFA00201C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B04940271CF79BF900201C29 = {
+			isa = PBXGroup;
+			children = (
+				B04940321CF79BFA00201C29 /* VineCodeChallenge */,
+				B049404C1CF79BFA00201C29 /* VineCodeChallengeTests */,
+				B04940571CF79BFA00201C29 /* VineCodeChallengeUITests */,
+				B04940311CF79BFA00201C29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B04940311CF79BFA00201C29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B04940301CF79BFA00201C29 /* VineCodeChallenge.app */,
+				B04940491CF79BFA00201C29 /* VineCodeChallenge.xctest */,
+				B04940541CF79BFA00201C29 /* VineCodeChallenge.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B04940321CF79BFA00201C29 /* VineCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				B04940361CF79BFA00201C29 /* AppDelegate.h */,
+				B04940371CF79BFA00201C29 /* AppDelegate.m */,
+				B04940661CF79DD500201C29 /* WeatherDashboardViewController.h */,
+				B04940671CF79DD500201C29 /* WeatherDashboardViewController.m */,
+				B04940721CF896E600201C29 /* DailyConditionsViewController.h */,
+				B04940731CF896E600201C29 /* DailyConditionsViewController.m */,
+				B04940751CF8ABF100201C29 /* WeatherReport.h */,
+				B04940761CF8ABF100201C29 /* WeatherReport.m */,
+				B04940691CF7CCA000201C29 /* ForecastAPIClient.h */,
+				B049406A1CF7CCA000201C29 /* ForecastAPIClient.m */,
+				B049403C1CF79BFA00201C29 /* Main.storyboard */,
+				B049403F1CF79BFA00201C29 /* Assets.xcassets */,
+				B04940411CF79BFA00201C29 /* LaunchScreen.storyboard */,
+				B04940441CF79BFA00201C29 /* Info.plist */,
+				B04940331CF79BFA00201C29 /* Supporting Files */,
+			);
+			path = VineCodeChallenge;
+			sourceTree = "<group>";
+		};
+		B04940331CF79BFA00201C29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B04940341CF79BFA00201C29 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B049404C1CF79BFA00201C29 /* VineCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B049404D1CF79BFA00201C29 /* VineCodeChallengeTests.m */,
+				B049404F1CF79BFA00201C29 /* Info.plist */,
+			);
+			path = VineCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		B04940571CF79BFA00201C29 /* VineCodeChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B04940581CF79BFA00201C29 /* VineCodeChallengeUITests.m */,
+				B049405A1CF79BFA00201C29 /* Info.plist */,
+			);
+			path = VineCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B049402F1CF79BFA00201C29 /* VineCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B049405D1CF79BFA00201C29 /* Build configuration list for PBXNativeTarget "VineCodeChallenge" */;
+			buildPhases = (
+				B049402C1CF79BFA00201C29 /* Sources */,
+				B049402D1CF79BFA00201C29 /* Frameworks */,
+				B049402E1CF79BFA00201C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VineCodeChallenge;
+			productName = VineCodeChallenge;
+			productReference = B04940301CF79BFA00201C29 /* VineCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B04940481CF79BFA00201C29 /* VineCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04940601CF79BFA00201C29 /* Build configuration list for PBXNativeTarget "VineCodeChallengeTests" */;
+			buildPhases = (
+				B04940451CF79BFA00201C29 /* Sources */,
+				B04940461CF79BFA00201C29 /* Frameworks */,
+				B04940471CF79BFA00201C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B049404B1CF79BFA00201C29 /* PBXTargetDependency */,
+			);
+			name = VineCodeChallengeTests;
+			productName = VineCodeChallengeTests;
+			productReference = B04940491CF79BFA00201C29 /* VineCodeChallenge.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B04940531CF79BFA00201C29 /* VineCodeChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04940631CF79BFA00201C29 /* Build configuration list for PBXNativeTarget "VineCodeChallengeUITests" */;
+			buildPhases = (
+				B04940501CF79BFA00201C29 /* Sources */,
+				B04940511CF79BFA00201C29 /* Frameworks */,
+				B04940521CF79BFA00201C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B04940561CF79BFA00201C29 /* PBXTargetDependency */,
+			);
+			name = VineCodeChallengeUITests;
+			productName = VineCodeChallengeUITests;
+			productReference = B04940541CF79BFA00201C29 /* VineCodeChallenge.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B04940281CF79BF900201C29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ariel Scott-Dicker";
+				TargetAttributes = {
+					B049402F1CF79BFA00201C29 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7LA77DS2EA;
+					};
+					B04940481CF79BFA00201C29 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7LA77DS2EA;
+						TestTargetID = B049402F1CF79BFA00201C29;
+					};
+					B04940531CF79BFA00201C29 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7LA77DS2EA;
+						TestTargetID = B049402F1CF79BFA00201C29;
+					};
+				};
+			};
+			buildConfigurationList = B049402B1CF79BF900201C29 /* Build configuration list for PBXProject "VineCodeChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B04940271CF79BF900201C29;
+			productRefGroup = B04940311CF79BFA00201C29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B049402F1CF79BFA00201C29 /* VineCodeChallenge */,
+				B04940481CF79BFA00201C29 /* VineCodeChallengeTests */,
+				B04940531CF79BFA00201C29 /* VineCodeChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B049402E1CF79BFA00201C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04940431CF79BFA00201C29 /* LaunchScreen.storyboard in Resources */,
+				B04940401CF79BFA00201C29 /* Assets.xcassets in Resources */,
+				B049403E1CF79BFA00201C29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04940471CF79BFA00201C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04940521CF79BFA00201C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B049402C1CF79BFA00201C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04940381CF79BFA00201C29 /* AppDelegate.m in Sources */,
+				B04940741CF896E600201C29 /* DailyConditionsViewController.m in Sources */,
+				B04940351CF79BFA00201C29 /* main.m in Sources */,
+				B049406B1CF7CCA000201C29 /* ForecastAPIClient.m in Sources */,
+				B04940771CF8ABF100201C29 /* WeatherReport.m in Sources */,
+				B04940681CF79DD500201C29 /* WeatherDashboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04940451CF79BFA00201C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B049404E1CF79BFA00201C29 /* VineCodeChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04940501CF79BFA00201C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04940591CF79BFA00201C29 /* VineCodeChallengeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B049404B1CF79BFA00201C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B049402F1CF79BFA00201C29 /* VineCodeChallenge */;
+			targetProxy = B049404A1CF79BFA00201C29 /* PBXContainerItemProxy */;
+		};
+		B04940561CF79BFA00201C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B049402F1CF79BFA00201C29 /* VineCodeChallenge */;
+			targetProxy = B04940551CF79BFA00201C29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B049403C1CF79BFA00201C29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B049403D1CF79BFA00201C29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B04940411CF79BFA00201C29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04940421CF79BFA00201C29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B049405B1CF79BFA00201C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B049405C1CF79BFA00201C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B049405E1CF79BFA00201C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VineCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VineCodeChallenge;
+				PRODUCT_NAME = VineCodeChallenge;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B049405F1CF79BFA00201C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VineCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VineCodeChallenge;
+				PRODUCT_NAME = VineCodeChallenge;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B04940611CF79BFA00201C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VineCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VineCodeChallengeTests;
+				PRODUCT_NAME = VineCodeChallenge;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VineCodeChallenge.app/VineCodeChallenge";
+			};
+			name = Debug;
+		};
+		B04940621CF79BFA00201C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VineCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VineCodeChallengeTests;
+				PRODUCT_NAME = VineCodeChallenge;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VineCodeChallenge.app/VineCodeChallenge";
+			};
+			name = Release;
+		};
+		B04940641CF79BFA00201C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VineCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VineCodeChallengeUITests;
+				PRODUCT_NAME = VineCodeChallenge;
+				TEST_TARGET_NAME = VineCodeChallenge;
+			};
+			name = Debug;
+		};
+		B04940651CF79BFA00201C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VineCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VineCodeChallengeUITests;
+				PRODUCT_NAME = VineCodeChallenge;
+				TEST_TARGET_NAME = VineCodeChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B049402B1CF79BF900201C29 /* Build configuration list for PBXProject "VineCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B049405B1CF79BFA00201C29 /* Debug */,
+				B049405C1CF79BFA00201C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B049405D1CF79BFA00201C29 /* Build configuration list for PBXNativeTarget "VineCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B049405E1CF79BFA00201C29 /* Debug */,
+				B049405F1CF79BFA00201C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B04940601CF79BFA00201C29 /* Build configuration list for PBXNativeTarget "VineCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04940611CF79BFA00201C29 /* Debug */,
+				B04940621CF79BFA00201C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B04940631CF79BFA00201C29 /* Build configuration list for PBXNativeTarget "VineCodeChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04940641CF79BFA00201C29 /* Debug */,
+				B04940651CF79BFA00201C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B04940281CF79BF900201C29 /* Project object */;
+}
