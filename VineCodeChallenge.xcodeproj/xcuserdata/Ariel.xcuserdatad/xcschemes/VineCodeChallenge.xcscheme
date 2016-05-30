@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B049402F1CF79BFA00201C29"
-               BuildableName = "SimpleWeatherApp.app"
+               BuildableName = "VineCodeChallenge.app"
                BlueprintName = "VineCodeChallenge"
                ReferencedContainer = "container:VineCodeChallenge.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B049402F1CF79BFA00201C29"
-            BuildableName = "SimpleWeatherApp.app"
+            BuildableName = "VineCodeChallenge.app"
             BlueprintName = "VineCodeChallenge"
             ReferencedContainer = "container:VineCodeChallenge.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B049402F1CF79BFA00201C29"
-            BuildableName = "SimpleWeatherApp.app"
+            BuildableName = "VineCodeChallenge.app"
             BlueprintName = "VineCodeChallenge"
             ReferencedContainer = "container:VineCodeChallenge.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B049402F1CF79BFA00201C29"
-            BuildableName = "SimpleWeatherApp.app"
+            BuildableName = "VineCodeChallenge.app"
             BlueprintName = "VineCodeChallenge"
             ReferencedContainer = "container:VineCodeChallenge.xcodeproj">
          </BuildableReference>

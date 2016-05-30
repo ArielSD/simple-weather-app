@@ -84,6 +84,7 @@
                                                               multiplier:0.2].active = YES;
     
     self.currentConditionsTextView.textAlignment = NSTextAlignmentCenter;
+    self.currentConditionsTextView.editable = NO;
     self.currentConditionsTextView.text = @"---";
 }
 
