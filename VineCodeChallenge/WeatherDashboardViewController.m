@@ -170,7 +170,7 @@
                                             }
                                             
                                             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                                                self.currentWeatherLabel.text = [NSString stringWithFormat:@"Current Temperature: %@", weatherData[@"currently"][@"temperature"]];
+                                                self.currentWeatherLabel.text = [NSString stringWithFormat:@"Current Temperature: %.2f", [weatherData[@"currently"][@"temperature"] doubleValue]];
                                                 self.currentConditionsTextView.text = [NSString stringWithFormat:@"%@", weatherData[@"currently"][@"summary"]];
                                                 [self.weatherTableView reloadData];
                                             }];

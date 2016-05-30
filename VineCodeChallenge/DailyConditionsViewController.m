@@ -72,8 +72,8 @@
     
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         self.conditionsTextView.text = weatherReport.summary;
-        self.maximumTemperatureLabel.text = [NSString stringWithFormat:@"High: %@", weatherReport.maximumTemperature];
-        self.minimumTemperatureLabel.text = [NSString stringWithFormat:@"Low: %@", weatherReport.minimumTemperature];
+        self.maximumTemperatureLabel.text = [NSString stringWithFormat:@"High: %.2f", [weatherReport.maximumTemperature doubleValue]];
+        self.minimumTemperatureLabel.text = [NSString stringWithFormat:@"Low: %.2f", [weatherReport.minimumTemperature doubleValue]];
     }];
 }
 
