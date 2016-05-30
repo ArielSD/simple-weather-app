@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configureConditionsLabel];
+    [self configureConditionsTextView];
     [self configureMaximumTemperatureLabel];
     [self configureMinimumTemperatureLabel];
 }
@@ -25,16 +25,20 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)configureConditionsLabel {
-    self.conditionsLabel = [UILabel new];
-    [self.view addSubview:self.conditionsLabel];
+- (void)configureConditionsTextView {
+    self.conditionsTextView = [UITextView new];
+    [self.view addSubview:self.conditionsTextView];
     
-    self.conditionsLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.conditionsLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
-    [self.conditionsLabel.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
+    self.conditionsTextView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.conditionsTextView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
+    [self.conditionsTextView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
+    [self.conditionsTextView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
+    [self.conditionsTextView.heightAnchor constraintEqualToAnchor:self.view.heightAnchor
+                                                       multiplier:0.2].active = YES;
     
-    self.conditionsLabel.textAlignment = NSTextAlignmentCenter;
-    self.conditionsLabel.text = @"---";
+    self.conditionsTextView.textAlignment = NSTextAlignmentCenter;
+    self.conditionsTextView.editable = NO;
+    self.conditionsTextView.text = @"---";
 }
 
 - (void)configureMaximumTemperatureLabel {
@@ -44,7 +48,7 @@
     self.maximumTemperatureLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.maximumTemperatureLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
     [self.maximumTemperatureLabel.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
-    [self.maximumTemperatureLabel.topAnchor constraintEqualToAnchor:self.conditionsLabel.bottomAnchor].active = YES;
+    [self.maximumTemperatureLabel.topAnchor constraintEqualToAnchor:self.conditionsTextView.bottomAnchor].active = YES;
     
     self.maximumTemperatureLabel.textAlignment = NSTextAlignmentCenter;
     self.maximumTemperatureLabel.text = @"High: ---";
@@ -67,7 +71,7 @@
           didSelectDayForWeatherReport:(WeatherReport *)weatherReport {
     
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        self.conditionsLabel.text = weatherReport.summary;
+        self.conditionsTextView.text = weatherReport.summary;
         self.maximumTemperatureLabel.text = [NSString stringWithFormat:@"High: %@", weatherReport.maximumTemperature];
         self.minimumTemperatureLabel.text = [NSString stringWithFormat:@"Low: %@", weatherReport.minimumTemperature];
     }];
