@@ -22,6 +22,7 @@
     [self configureRefreshButton];
     [self configureEnableLocationServicesLabel];
     [self configureLocationManager];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.weeklyForecastArray = [NSMutableArray new];
 }

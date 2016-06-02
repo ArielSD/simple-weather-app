@@ -19,6 +19,7 @@
     [self configureConditionsTextView];
     [self configureMaximumTemperatureLabel];
     [self configureMinimumTemperatureLabel];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
